@@ -15,6 +15,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.pvzer.kotlindemo.demo.ComposeArticleDemo
 import com.pvzer.kotlindemo.demo.BirthdayCardDemo
+import com.pvzer.kotlindemo.demo.BusinessCardDemo
 import com.pvzer.kotlindemo.demo.ComposeQuadrant
 import com.pvzer.kotlindemo.demo.TaskCompletedDemo
 import com.pvzer.kotlindemo.ui.theme.KotlinDemoTheme
@@ -35,7 +36,8 @@ class MainActivity : ComponentActivity() {
 //                    BirthyCardScreen()
 //                    ComposeArticleScreen()
 //                    TaskCompletedDemo()
-                    ComposeQuadrant()
+//                    ComposeQuadrant()
+                    BusinessCardScreen()
 
                 }
             }
@@ -71,4 +73,17 @@ fun TaskCompletedScreen(){
 @Composable
 fun ComposeQuadrantScreen(){
     ComposeQuadrant();
+}
+
+@Composable
+fun BusinessCardScreen(){
+    val name = stringResource(R.string.business_card_name)
+    val introduction = stringResource(R.string.business_card_introduction)
+    val phone = stringResource(R.string.business_card_phone)
+    val site = stringResource(R.string.business_card_site)
+    val email = stringResource(R.string.business_card_email)
+    val avatar = painterResource(R.drawable.business_card_avatar)
+
+    BusinessCardDemo(name, introduction, phone, site, email,avatar)
+
 }

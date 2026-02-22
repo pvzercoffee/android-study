@@ -57,7 +57,7 @@ fun BirthdayCardDemo(message: String, from : String, modifier: Modifier  = Modif
             painter = image,
             contentDescription = "贺卡图片",
             contentScale = ContentScale.Crop,
-            alpha = 0.5f
+            alpha = 1f
         )
         GreetingText(
             message = message,

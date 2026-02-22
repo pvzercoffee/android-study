@@ -12,4 +12,7 @@
     <color name="limit_2">#FFD0BCFF</color>
     <color name="limit_3">#FFB69DF8</color>
     <color name="limit_4">#FFF6EDFF</color>
+
+    <color name="business_card_background">#d2e8d4</color>
+    <color name="business_card_text">#318254</color>
 </resources>
