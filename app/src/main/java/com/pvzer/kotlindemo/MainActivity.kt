@@ -15,6 +15,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.pvzer.kotlindemo.demo.ComposeArticleDemo
 import com.pvzer.kotlindemo.demo.BirthdayCardDemo
+import com.pvzer.kotlindemo.demo.ComposeQuadrant
 import com.pvzer.kotlindemo.demo.TaskCompletedDemo
 import com.pvzer.kotlindemo.ui.theme.KotlinDemoTheme
 
@@ -31,15 +32,17 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background,
                     ) {
 
-                    BirthyCardScreen();
+//                    BirthyCardScreen()
 //                    ComposeArticleScreen()
 //                    TaskCompletedDemo()
+                    ComposeQuadrant()
 
                 }
             }
         }
     }
 }
+
 
 @Composable
 fun BirthyCardScreen(){
@@ -63,4 +66,9 @@ fun ComposeArticleScreen(){
 @Composable
 fun TaskCompletedScreen(){
     TaskCompletedDemo()
+}
+
+@Composable
+fun ComposeQuadrantScreen(){
+    ComposeQuadrant();
 }
