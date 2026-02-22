@@ -20,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -39,7 +40,11 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background,
                     ) {
 
-                    GreetingImage("Happy Birthday Catus1437!","PvZer")
+                    val happyBirthday = stringResource(R.string.happy_birthday);
+                    val targetName = stringResource(R.string.card_target_name);
+                    val pvzer = stringResource(R.string.pvzer);
+
+                    GreetingImage("$happyBirthday $targetName", pvzer)
 
                 }
             }
@@ -51,7 +56,7 @@ class MainActivity : ComponentActivity() {
 fun GreetingText(message: String, from:String, modifier: Modifier = Modifier){
 
     Column(
-        modifier = modifier,
+        modifier = modifier.padding(8.dp),
         verticalArrangement = Arrangement.Center
     ) {
 
@@ -67,7 +72,9 @@ fun GreetingText(message: String, from:String, modifier: Modifier = Modifier){
         Text(
             text = "from $from",
             fontSize = 40.sp,
-            modifier = Modifier.padding(16.dp).align(alignment = Alignment.End)
+            modifier = Modifier
+                .padding(16.dp)
+                .align(alignment = Alignment.CenterHorizontally)
         )
 
     }
