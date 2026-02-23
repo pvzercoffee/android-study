@@ -40,7 +40,8 @@ class MainActivity : ComponentActivity() {
 //                    TaskCompletedDemo()
 //                    ComposeQuadrant()
 //                    BusinessCardScreen()
-                    DiceRollerDemo();
+//                    DiceRollerDemo();
+                    TipCalculatorDemo()
 
                 }
             }
