@@ -22,7 +22,8 @@
     <string name="limit_4_message">A layout composable that places its children in a vertical sequence.</string>
     <string name="business_card_name">Zhenjie Lei</string>
     <string name="business_card_introduction">Android Developer Extraordinaire</string>
-    <string name="business_card_phone">195 7458 7026</string>
+    <string name="business_card_phone">19574587026</string>
     <string name="business_card_site">\@pvzercoffee</string>
     <string name="business_card_email">pvzercoffee@gmail.com</string>
+    <string name="roll">Roll</string>
 </resources>

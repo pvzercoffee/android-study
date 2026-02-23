@@ -1,4 +1,4 @@
-package com.pvzer.kotlindemo.demo
+package com.pvzer.kotlindemo.compose
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column

@@ -13,11 +13,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.pvzer.kotlindemo.demo.ComposeArticleDemo
-import com.pvzer.kotlindemo.demo.BirthdayCardDemo
-import com.pvzer.kotlindemo.demo.BusinessCardDemo
-import com.pvzer.kotlindemo.demo.ComposeQuadrant
-import com.pvzer.kotlindemo.demo.TaskCompletedDemo
+import com.pvzer.kotlindemo.compose.ComposeArticleDemo
+import com.pvzer.kotlindemo.compose.BirthdayCardDemo
+import com.pvzer.kotlindemo.compose.BusinessCardDemo
+import com.pvzer.kotlindemo.compose.ComposeQuadrant
+import com.pvzer.kotlindemo.compose.DiceRollerDemo
+import com.pvzer.kotlindemo.compose.TaskCompletedDemo
+import com.pvzer.kotlindemo.compose.TipCalculatorDemo
 import com.pvzer.kotlindemo.ui.theme.KotlinDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,7 +39,8 @@ class MainActivity : ComponentActivity() {
 //                    ComposeArticleScreen()
 //                    TaskCompletedDemo()
 //                    ComposeQuadrant()
-                    BusinessCardScreen()
+//                    BusinessCardScreen()
+                    DiceRollerDemo();
 
                 }
             }
@@ -85,5 +88,14 @@ fun BusinessCardScreen(){
     val avatar = painterResource(R.drawable.business_card_avatar)
 
     BusinessCardDemo(name, introduction, phone, site, email,avatar)
+}
 
+@Composable
+fun DiceRollerScreen() {
+    DiceRollerDemo()
+}
+
+@Composable
+fun TipCalculatorScreen() {
+    TipCalculatorDemo()
 }

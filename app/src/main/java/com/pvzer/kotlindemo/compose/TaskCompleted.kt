@@ -1,4 +1,4 @@
-package com.pvzer.kotlindemo.demo
+package com.pvzer.kotlindemo.compose
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -12,12 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pvzer.kotlindemo.R
-import org.intellij.lang.annotations.JdkConstants
 
 @Composable
 fun TaskCompletedDemo(modifier: Modifier = Modifier){
