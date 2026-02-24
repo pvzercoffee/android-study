@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.sp
 import com.pvzer.kotlindemo.R
 
 @Composable
-fun TaskCompletedDemo(modifier: Modifier = Modifier){
+fun TaskCompletedScreen(modifier: Modifier = Modifier){
     val image = painterResource(R.drawable.ic_task_completed)
     val message = stringResource(R.string.all_tasks_completed)
     val say = stringResource(R.string.nice_work)

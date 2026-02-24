@@ -13,13 +13,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pvzer.kotlindemo.compose.ArtSpaceDemo
 import com.pvzer.kotlindemo.compose.ComposeArticleDemo
 import com.pvzer.kotlindemo.compose.BirthdayCardDemo
 import com.pvzer.kotlindemo.compose.BusinessCardDemo
-import com.pvzer.kotlindemo.compose.ComposeQuadrant
+import com.pvzer.kotlindemo.compose.ComposeQuadrantScreen
 import com.pvzer.kotlindemo.compose.DiceRollerDemo
-import com.pvzer.kotlindemo.compose.TaskCompletedDemo
+import com.pvzer.kotlindemo.compose.TaskCompletedScreen
 import com.pvzer.kotlindemo.compose.TipCalculatorDemo
+import com.pvzer.kotlindemo.pojo.ArtSpaceCard
 import com.pvzer.kotlindemo.ui.theme.KotlinDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,11 +39,12 @@ class MainActivity : ComponentActivity() {
 
 //                    BirthyCardScreen()
 //                    ComposeArticleScreen()
-//                    TaskCompletedDemo()
-//                    ComposeQuadrant()
+//                    TaskCompletedScreen()
+//                    ComposeQuadrantScreen()
 //                    BusinessCardScreen()
-//                    DiceRollerDemo();
-                    TipCalculatorDemo()
+//                    DiceRollerScreen()
+//                    TipCalculatorScreen()
+                    ArtSpaceScreen()
 
                 }
             }
@@ -71,12 +74,12 @@ fun ComposeArticleScreen(){
 
 @Composable
 fun TaskCompletedScreen(){
-    TaskCompletedDemo()
+    TaskCompletedScreen()
 }
 
 @Composable
 fun ComposeQuadrantScreen(){
-    ComposeQuadrant();
+    ComposeQuadrantScreen();
 }
 
 @Composable
@@ -99,4 +102,36 @@ fun DiceRollerScreen() {
 @Composable
 fun TipCalculatorScreen() {
     TipCalculatorDemo()
+}
+
+@Composable
+fun ArtSpaceScreen(){
+
+    var cardList: ArrayList<ArtSpaceCard> = ArrayList()
+
+    cardList.add(ArtSpaceCard(
+        image = R.drawable.landspace_qixingyan,
+        description = "七星岩风景",
+        title = "端州区七星岩的公园风景",
+        author = "PvZer Coffee",
+        year = "2025"
+    ))
+
+    cardList.add(ArtSpaceCard(
+        image = R.drawable.landspace_duanzhou,
+        description = "端州区风景",
+        title = "端州区黄冈街道的黄昏时",
+        author = "PvZer Coffee",
+        year = "2026"
+    ))
+
+    cardList.add(ArtSpaceCard(
+        image = R.drawable.landspace_shenguangshan,
+        description = "神光山风景",
+        title = "兴宁市神光山顶的日落",
+        author = "PvZer Coffee",
+        year = "2026"
+    ))
+
+    ArtSpaceDemo(cardList)
 }

@@ -20,7 +20,7 @@ import com.pvzer.kotlindemo.R
 
 
 @Composable
-fun ComposeQuadrant(modifier: Modifier = Modifier){
+fun ComposeQuadrantScreen(modifier: Modifier = Modifier){
     Column(
         modifier = modifier
             .fillMaxSize()
