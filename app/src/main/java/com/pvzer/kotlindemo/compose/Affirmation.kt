@@ -27,6 +27,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.pvzer.kotlindemo.R
+import com.pvzer.kotlindemo.constant.DataSource
 import com.pvzer.kotlindemo.pojo.Affirmation
 
 @Composable
@@ -45,7 +46,7 @@ fun AffirmationsDemo(){
             )
     ) {
         AffirmationList(
-            affirmationList = Affirmation.loadAffirmations()
+            affirmationList = DataSource.affirmationList
         )
     }
 
@@ -63,7 +64,6 @@ private fun AffirmationList(affirmationList: List<Affirmation>,modifier: Modifie
         }
     }
 }
-
 @Composable
 private fun AffirmationCard(affirmation: Affirmation, modifier: Modifier = Modifier) {
     Card(modifier = modifier) {

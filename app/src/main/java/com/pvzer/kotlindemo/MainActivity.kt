@@ -19,9 +19,11 @@ import com.pvzer.kotlindemo.compose.ComposeArticleDemo
 import com.pvzer.kotlindemo.compose.BirthdayCardDemo
 import com.pvzer.kotlindemo.compose.BusinessCardDemo
 import com.pvzer.kotlindemo.compose.ComposeQuadrantScreen
+import com.pvzer.kotlindemo.compose.CoursesDemo
 import com.pvzer.kotlindemo.compose.DiceRollerDemo
 import com.pvzer.kotlindemo.compose.TaskCompletedDemo
 import com.pvzer.kotlindemo.compose.TipCalculatorDemo
+import com.pvzer.kotlindemo.constant.DataSource
 import com.pvzer.kotlindemo.pojo.ArtSpaceCard
 import com.pvzer.kotlindemo.ui.theme.KotlinDemoTheme
 
@@ -46,7 +48,8 @@ class MainActivity : ComponentActivity() {
 //                    DiceRollerScreen()
 //                    TipCalculatorScreen()
 //                    ArtSpaceScreen()
-                    AffirmationsDemo()
+//                    AffirmationsDemo()
+                    CoursesDemo()
 
                 }
             }
@@ -108,10 +111,15 @@ fun TipCalculatorScreen() {
 
 @Composable
 fun ArtSpaceScreen(){
-    ArtSpaceDemo(ArtSpaceCard.loadCard())
+    ArtSpaceDemo(DataSource.artCardList)
 }
 
 @Composable
 fun AffirmationsScreen(){
     AffirmationsDemo()
+}
+
+@Composable
+fun CoursesScreen(){
+    CoursesDemo()
 }
