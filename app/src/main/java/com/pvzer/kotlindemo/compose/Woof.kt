@@ -46,7 +46,7 @@ import com.pvzer.kotlindemo.R
 import com.pvzer.kotlindemo.WoofScreen
 import com.pvzer.kotlindemo.pojo.Dog
 import com.pvzer.kotlindemo.pojo.dogs
-import com.pvzer.kotlindemo.ui.theme.WoofTheme
+import com.pvzer.kotlindemo.ui.theme.SuperheroesTheme
 
 
 /**
@@ -126,43 +126,50 @@ private fun WoofTopAppBar(modifier: Modifier = Modifier){
 @Composable
 fun DogItem(
     dog: Dog,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier // 这里的 modifier 包含了外部传进来的 padding
 ) {
     var expanded by remember { mutableStateOf(false) }
 
-    Column(modifier = Modifier.animateContentSize(
-        animationSpec = spring(
-            dampingRatio = Spring.DampingRatioNoBouncy,
-            stiffness = Spring.StiffnessMedium
-            )
-        )
+    // 使用 Card 包裹，动画才会有视觉载体
+    Card(
+        modifier = modifier // 确保外部传入的 padding 应用在这里
     ) {
-        Row(
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(dimensionResource(R.dimen.padding_small))
-        ) {
-            DogIcon(dog.imageResourceId)
-            DogInformation(dog.name, dog.age)
-            Spacer(modifier = Modifier.weight(1f))
-            DogItemButton(
-                expanded = expanded,
-                onClick = { expanded = !expanded }
-            )
-        }
-
-        if (expanded) {
-            DogHobby(
-                dog.hobbies, modifier = Modifier.padding(
-                    start = dimensionResource(R.dimen.padding_medium),
-                    top = dimensionResource(R.dimen.padding_small),
-                    end = dimensionResource(R.dimen.padding_medium),
-                    bottom = dimensionResource(R.dimen.padding_medium)
+                .animateContentSize( // 动画作用于 Column 容器
+                    animationSpec = spring(
+                        dampingRatio = Spring.DampingRatioNoBouncy,
+                        stiffness = Spring.StiffnessMedium
+                    )
                 )
-            )
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(dimensionResource(R.dimen.padding_small))
+            ) {
+                DogIcon(dog.imageResourceId)
+                DogInformation(dog.name, dog.age)
+                Spacer(modifier = Modifier.weight(1f))
+                DogItemButton(
+                    expanded = expanded,
+                    onClick = { expanded = !expanded }
+                )
+            }
+
+            if (expanded) {
+                DogHobby(
+                    dog.hobbies,
+                    modifier = Modifier.padding(start = dimensionResource(R.dimen.padding_medium),
+                        top = dimensionResource(R.dimen.padding_small),
+                        end = dimensionResource(R.dimen.padding_medium),
+                        bottom = dimensionResource(R.dimen.padding_medium)
+                    )
+                )
+            }
         }
     }
-
 }
 
 /**
