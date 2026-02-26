@@ -1,6 +1,8 @@
 package com.pvzer.kotlindemo
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -22,8 +24,10 @@ import com.pvzer.kotlindemo.compose.DiceRollerDemo
 import com.pvzer.kotlindemo.compose.SuperheroDemo
 import com.pvzer.kotlindemo.compose.TaskCompletedDemo
 import com.pvzer.kotlindemo.compose.TipCalculatorDemo
+import com.pvzer.kotlindemo.compose.WellnessDemo
 import com.pvzer.kotlindemo.compose.WoofDemo
 import com.pvzer.kotlindemo.constant.DataSource
+import com.pvzer.kotlindemo.pojo.Wellness
 import com.pvzer.kotlindemo.ui.theme.SuperheroesTheme
 
 
@@ -51,13 +55,44 @@ class MainActivity : ComponentActivity() {
 //                    AffirmationsDemo()
 //                    CoursesDemo()
 //                    WoofScreen()
-                    SuperheroScreen()
+//                    SuperheroScreen()
+                    WellnessScreen()
                 }
             }
         }
     }
-}
 
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart Called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume Called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart Called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop Called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy Called")
+    }
+
+}
 
 
 @Composable
@@ -135,4 +170,9 @@ fun WoofScreen(){
 @Composable
 fun SuperheroScreen(){
     SuperheroDemo()
+}
+
+@Composable
+fun WellnessScreen(){
+    WellnessDemo()
 }

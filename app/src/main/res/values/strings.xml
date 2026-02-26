@@ -97,4 +97,96 @@
     <string name="description6">Ability to shift to any form and energize</string>
     <string name="superheros">Superheros</string>
 
+
+    <string name="wellness_title_day1">Start Your Morning With Water</string>
+    <string name="wellness_content_day1">Drink a full glass of warm water right after waking up to rehydrate your body and kickstart your metabolism for the day ahead.</string>
+
+    <string name="wellness_title_day2">Practice Five Minute Deep Breathing</string>
+    <string name="wellness_content_day2">Take five minutes to sit quietly and focus on deep rhythmic breathing to reduce stress levels and improve your mental clarity.</string>
+
+    <string name="wellness_title_day3">Walk Ten Thousand Steps Today</string>
+    <string name="wellness_content_day3">Try to stay active by hitting a goal of ten thousand steps. Physical movement is essential for maintaining a healthy cardiovascular system.</string>
+
+    <string name="wellness_title_day4">Eat More Fresh Green Vegetables</string>
+    <string name="wellness_content_day4">Incorporate at least two servings of leafy greens into your meals today to boost your intake of essential vitamins and minerals.</string>
+
+    <string name="wellness_title_day5">Prioritize Eight Hours Of Sleep</string>
+    <string name="wellness_content_day5">Go to bed early tonight and aim for eight hours of quality sleep to allow your body and brain to recover effectively.</string>
+
+    <string name="wellness_title_day6">Take A Short Digital Detox</string>
+    <string name="wellness_content_day6">Disconnect from all electronic devices for at least one hour before bed to improve your sleep quality and reduce eye strain.</string>
+
+    <string name="wellness_title_day7">Stretch Your Body Every Morning</string>
+    <string name="wellness_content_day7">Perform gentle stretching exercises for ten minutes after waking up to improve flexibility and release muscle tension from sleeping.</string>
+
+    <string name="wellness_title_day8">Avoid All Processed Sugar Today</string>
+    <string name="wellness_content_day8">Challenge yourself to eliminate snacks and drinks with added sugar for the entire day to stabilize your energy levels.</string>
+
+    <string name="wellness_title_day9">Write Down Three Grateful Things</string>
+    <string name="wellness_content_day9">Spend a few minutes in the evening reflecting on your day and writing down three things you are truly grateful for in a journal.</string>
+
+    <string name="wellness_title_day10">Maintain Good Posture While Coding</string>
+    <string name="wellness_content_day10">Keep your back straight and shoulders relaxed while working on your computer to prevent long-term spinal issues and muscle fatigue.</string>
+
+    <string name="wellness_title_day11">Practice Mindful Eating During Lunch</string>
+    <string name="wellness_content_day11">Focus entirely on the taste and texture of your food without distractions like your phone or computer to improve digestion.</string>
+
+    <string name="wellness_title_day12">Listen To Calming Natural Sounds</string>
+    <string name="wellness_content_day12">Spend some time listening to recordings of rain, waves, or forest sounds to calm your nervous system and enhance focus.</string>
+
+    <string name="wellness_title_day13">Drink Green Tea For Antioxidants</string>
+    <string name="wellness_content_day13">Replace one cup of coffee with a cup of high-quality green tea to benefit from its natural antioxidants and gentle caffeine.</string>
+
+    <string name="wellness_title_day14">Organize Your Physical Work Space</string>
+    <string name="wellness_content_day14">A clean environment leads to a clear mind. Spend fifteen minutes decluttering your desk to boost your daily productivity.</string>
+
+    <string name="wellness_title_day15">Try A New Healthy Recipe</string>
+    <string name="wellness_content_day15">Experiment with cooking a healthy meal you have never tried before using fresh, whole ingredients and minimal oil.</string>
+
+    <string name="wellness_title_day16">Do Some Moderate Strength Training</string>
+    <string name="wellness_content_day16">Incorporate basic bodyweight exercises like push-ups or squats into your routine to build muscle strength and bone density.</string>
+
+    <string name="wellness_title_day17">Spend Time In Sunlight Outdoors</string>
+    <string name="wellness_content_day17">Spend at least fifteen minutes outside in the sun to help your body produce Vitamin D and improve your overall mood.</string>
+
+    <string name="wellness_title_day18">Limit Caffeine Intake After Noon</string>
+    <string name="wellness_content_day18">Avoid drinking coffee or energy drinks in the afternoon to ensure that your natural circadian rhythm is not disrupted tonight.</string>
+
+    <string name="wellness_title_day19">Read A Book For Pleasure</string>
+    <string name="wellness_content_day19">Dedicate thirty minutes to reading a physical book or an e-reader to relax your mind and expand your knowledge or imagination.</string>
+
+    <string name="wellness_title_day20">Practice Forgiveness Toward Yourself Today</string>
+    <string name="wellness_content_day20">Let go of past mistakes or missed goals. Acknowledge your progress and treat yourself with the same kindness you show others.</string>
+
+    <string name="wellness_title_day21">Take Regular Eye Focus Breaks</string>
+    <string name="wellness_content_day21">Follow the 20-20-20 rule: every 20 minutes, look at something 20 feet away for 20 seconds to reduce digital eye strain.</string>
+
+    <string name="wellness_title_day22">Smile At Yourself In Mirror</string>
+    <string name="wellness_content_day22">It might feel silly, but smiling at yourself in the mirror can trigger the release of endorphins and boost your self-confidence.</string>
+
+    <string name="wellness_title_day23">Choose Stairs Over The Elevator</string>
+    <string name="wellness_content_day23">Look for small opportunities to move more throughout the day by taking the stairs instead of relying on elevators or escalators.</string>
+
+    <string name="wellness_title_day24">Plan Your Goals For Tomorrow</string>
+    <string name="wellness_content_day24">Spend five minutes before bed listing your top three priorities for the next day to reduce morning anxiety and increase focus.</string>
+
+    <string name="wellness_title_day25">Enjoy A Relaxing Warm Bath</string>
+    <string name="wellness_content_day25">Use a warm bath or a long shower to relax your muscles and transition your body into a restful state before going to sleep.</string>
+
+    <string name="wellness_title_day26">Eat Seasonal Fruits For Snacks</string>
+    <string name="wellness_content_day26">Swap processed snacks for a piece of fresh seasonal fruit to satisfy your sweet cravings while getting healthy fiber.</string>
+
+    <string name="wellness_title_day27">Learn A New Breathing Technique</string>
+    <string name="wellness_content_day27">Explore box breathing or the 4-7-8 technique today to gain a powerful tool for managing sudden stress or anxiety.</string>
+
+    <string name="wellness_title_day28">Compliment Someone Else Sincerely Today</string>
+    <string name="wellness_content_day28">Spreading positivity to others through a sincere compliment can improve your own social connections and emotional well-being.</string>
+
+    <string name="wellness_title_day29">Limit Salt In Your Meals</string>
+    <string name="wellness_content_day29">Try to use herbs and spices for flavor instead of salt today to help manage your blood pressure and reduce bloating.</string>
+
+    <string name="wellness_title_day30">Celebrate Your Thirty Day Progress</string>
+    <string name="wellness_content_day30">Reflect on the past thirty days of wellness habits. Acknowledge how far you have come and commit to continuing this healthy journey.</string>
+    <string name="_30_days_of_wellness">30 Days of Wellness</string>
+    <string name="click_to_expand">点击展开</string>
 </resources>
