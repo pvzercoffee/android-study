@@ -188,5 +188,17 @@
     <string name="wellness_title_day30">Celebrate Your Thirty Day Progress</string>
     <string name="wellness_content_day30">Reflect on the past thirty days of wellness habits. Acknowledge how far you have come and commit to continuing this healthy journey.</string>
     <string name="_30_days_of_wellness">30 Days of Wellness</string>
-    <string name="click_to_expand">点击展开</string>
+    <string name="click_to_expand">Click To Expand</string>
+
+    <string name="instructions">Unscramble the word using all the letters.</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="score">Score: %d</string>
+    <string name="word_count">%d/10</string>
+    <string name="enter_your_word">Enter your word</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_scored">"You scored: %d"</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
+    <string name="wrong_guess">Wrong Guess!</string>
 </resources>

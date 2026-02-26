@@ -6,28 +6,28 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import com.pvzer.kotlindemo.compose.AffirmationsDemo
-import com.pvzer.kotlindemo.compose.ArtSpaceDemo
-import com.pvzer.kotlindemo.compose.ComposeArticleDemo
-import com.pvzer.kotlindemo.compose.BirthdayCardDemo
-import com.pvzer.kotlindemo.compose.BusinessCardDemo
-import com.pvzer.kotlindemo.compose.ComposeQuadrantScreen
-import com.pvzer.kotlindemo.compose.CoursesDemo
-import com.pvzer.kotlindemo.compose.DiceRollerDemo
-import com.pvzer.kotlindemo.compose.SuperheroDemo
-import com.pvzer.kotlindemo.compose.TaskCompletedDemo
-import com.pvzer.kotlindemo.compose.TipCalculatorDemo
-import com.pvzer.kotlindemo.compose.WellnessDemo
-import com.pvzer.kotlindemo.compose.WoofDemo
-import com.pvzer.kotlindemo.constant.DataSource
-import com.pvzer.kotlindemo.pojo.Wellness
+import com.pvzer.kotlindemo.ui.affirmation.AffirmationsDemo
+import com.pvzer.kotlindemo.ui.art_space.ArtSpaceDemo
+import com.pvzer.kotlindemo.ui.compose_article.ComposeArticleDemo
+import com.pvzer.kotlindemo.ui.birthday_card.BirthdayCardDemo
+import com.pvzer.kotlindemo.ui.business_card.BusinessCardDemo
+import com.pvzer.kotlindemo.ui.quadrant.ComposeQuadrantScreen
+import com.pvzer.kotlindemo.ui.courses.CoursesDemo
+import com.pvzer.kotlindemo.ui.dice_roller.DiceRollerDemo
+import com.pvzer.kotlindemo.ui.unscramble.GameScreen
+import com.pvzer.kotlindemo.ui.superhero.SuperheroDemo
+import com.pvzer.kotlindemo.ui.task_completed.TaskCompletedDemo
+import com.pvzer.kotlindemo.ui.tip_calculator.TipCalculatorDemo
+import com.pvzer.kotlindemo.ui.wellness.WellnessDemo
+import com.pvzer.kotlindemo.ui.woof.WoofDemo
+import com.pvzer.kotlindemo.data.local.DataSource
+import com.pvzer.kotlindemo.data.local.art_space.ArtSpaceDatasource
 import com.pvzer.kotlindemo.ui.theme.SuperheroesTheme
 
 
@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
 
                 Surface(
-                    modifier = Modifier
+                    modifier = Modifier.fillMaxSize()
                 ) {
 
 //                    BirthyCardScreen()
@@ -56,7 +56,8 @@ class MainActivity : ComponentActivity() {
 //                    CoursesDemo()
 //                    WoofScreen()
 //                    SuperheroScreen()
-                    WellnessScreen()
+//                    WellnessScreen()
+                    UnscrambleScreen()
                 }
             }
         }
@@ -149,7 +150,7 @@ fun TipCalculatorScreen() {
 
 @Composable
 fun ArtSpaceScreen(){
-    ArtSpaceDemo(DataSource.artCardList)
+    ArtSpaceDemo(ArtSpaceDatasource.artCardList)
 }
 
 @Composable
@@ -175,4 +176,9 @@ fun SuperheroScreen(){
 @Composable
 fun WellnessScreen(){
     WellnessDemo()
+}
+
+@Composable
+fun UnscrambleScreen(){
+    GameScreen()
 }
