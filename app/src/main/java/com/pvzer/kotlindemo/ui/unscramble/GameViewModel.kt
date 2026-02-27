@@ -17,8 +17,6 @@ class GameViewModel : ViewModel() {
     var userGuess by mutableStateOf("")
         private set
 
-
-
     private val _uiState = MutableStateFlow(GameUiState())
     val uiState: StateFlow<GameUiState> = _uiState.asStateFlow()
 
@@ -36,9 +34,11 @@ class GameViewModel : ViewModel() {
 
     fun checkUserGuess() {
 
+        //ignoreCase = true ：忽略大小写
         if (userGuess.equals(currentWord, ignoreCase = true)) {
             // User's guess is correct, increase the score
             val updatedScore = _uiState.value.score.plus(SCORE_INCREASE)
+            updateGameState(updatedScore)
         }
             else {
             // User's guess is wrong, show an error
@@ -60,13 +60,6 @@ class GameViewModel : ViewModel() {
             return shuffleCurrentWord(currentWord)
         }
     }
-
-    fun skipWord() {
-        updateGameState(_uiState.value.score)
-        // Reset user guess
-        updateUserGuess("")
-    }
-
     private fun shuffleCurrentWord(word: String): String {
         val tempWord = word.toCharArray()
         // Scramble the word
@@ -76,6 +69,15 @@ class GameViewModel : ViewModel() {
         }
         return String(tempWord)
     }
+
+
+    fun skipWord() {
+        updateGameState(_uiState.value.score)
+        // Reset user guess
+        updateUserGuess("")
+    }
+
+
 
     private fun updateGameState(updatedScore: Int) {
         if (usedWords.size == MAX_NO_OF_WORDS){

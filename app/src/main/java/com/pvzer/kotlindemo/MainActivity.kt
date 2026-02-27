@@ -7,6 +7,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -28,6 +30,8 @@ import com.pvzer.kotlindemo.ui.wellness.WellnessDemo
 import com.pvzer.kotlindemo.ui.woof.WoofDemo
 import com.pvzer.kotlindemo.data.local.DataSource
 import com.pvzer.kotlindemo.data.local.art_space.ArtSpaceDatasource
+import com.pvzer.kotlindemo.data.local.dessert.DessertDatasource
+import com.pvzer.kotlindemo.ui.dessert.DessertClickerApp
 import com.pvzer.kotlindemo.ui.theme.SuperheroesTheme
 
 
@@ -57,7 +61,8 @@ class MainActivity : ComponentActivity() {
 //                    WoofScreen()
 //                    SuperheroScreen()
 //                    WellnessScreen()
-                    UnscrambleScreen()
+//                    UnscrambleScreen()
+                    DessertScreen()
                 }
             }
         }
@@ -181,4 +186,9 @@ fun WellnessScreen(){
 @Composable
 fun UnscrambleScreen(){
     GameScreen()
+}
+
+@Composable
+fun DessertScreen(){
+    DessertClickerApp(desserts = DessertDatasource.dessertList)
 }

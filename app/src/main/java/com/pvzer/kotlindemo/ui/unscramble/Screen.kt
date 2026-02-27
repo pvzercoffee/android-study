@@ -210,8 +210,6 @@ private fun Context.findActivity(): Activity? = when (this) {
     is ContextWrapper -> baseContext.findActivity()
     else -> null
 }
-
-
 /*
  * Creates and shows an AlertDialog with final score.
  */
