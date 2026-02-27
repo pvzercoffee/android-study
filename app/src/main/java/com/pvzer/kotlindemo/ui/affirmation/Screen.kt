@@ -25,9 +25,8 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.pvzer.kotlindemo.data.local.DataSource
 import com.pvzer.kotlindemo.data.local.affirmation.AffirmationDatasource
-import com.pvzer.kotlindemo.data.model.Affirmation
+import com.pvzer.kotlindemo.model.Affirmation
 
 @Composable
 fun AffirmationsDemo(){

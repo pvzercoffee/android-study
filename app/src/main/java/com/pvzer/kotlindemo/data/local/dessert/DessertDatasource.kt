@@ -1,7 +1,7 @@
 package com.pvzer.kotlindemo.data.local.dessert
 
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.Dessert
+import com.pvzer.kotlindemo.model.Dessert
 
 object DessertDatasource {
     val dessertList = listOf(

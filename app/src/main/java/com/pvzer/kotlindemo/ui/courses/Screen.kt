@@ -23,9 +23,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.local.DataSource
 import com.pvzer.kotlindemo.data.local.course.CourseDatasource
-import com.pvzer.kotlindemo.data.model.Topic
+import com.pvzer.kotlindemo.model.Topic
 
 @Composable
 fun CoursesDemo(modifier: Modifier = Modifier){

@@ -31,7 +31,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.ArtSpaceCard
+import com.pvzer.kotlindemo.model.ArtSpaceCard
 
 @Composable
 fun ArtSpaceDemo(

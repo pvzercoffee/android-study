@@ -34,7 +34,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.pvzer.kotlindemo.R
 import com.pvzer.kotlindemo.data.local.wellness.WellnessDatasource
-import com.pvzer.kotlindemo.data.model.Wellness
+import com.pvzer.kotlindemo.model.Wellness
 
 @Composable
 fun WellnessDemo(){

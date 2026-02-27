@@ -1,4 +1,4 @@
-package com.pvzer.kotlindemo.data.model
+package com.pvzer.kotlindemo.model
 
 /**
  * [Dessert] is the data class to represent the Dessert imageId, price, and startProductionAmount

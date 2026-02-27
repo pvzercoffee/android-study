@@ -38,8 +38,8 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.Dog
-import com.pvzer.kotlindemo.data.model.dogs
+import com.pvzer.kotlindemo.model.Dog
+import com.pvzer.kotlindemo.model.dogs
 
 
 /**

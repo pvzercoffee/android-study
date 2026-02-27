@@ -1,7 +1,7 @@
 package com.pvzer.kotlindemo.data.local.art_space
 
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.ArtSpaceCard
+import com.pvzer.kotlindemo.model.ArtSpaceCard
 
 object ArtSpaceDatasource{
     val artCardList = listOf<ArtSpaceCard>(

@@ -1,7 +1,7 @@
 package com.pvzer.kotlindemo.data.local.superhero
 
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.Hero
+import com.pvzer.kotlindemo.model.Hero
 
 object SuperheroDatasource {
     val heroes = listOf(

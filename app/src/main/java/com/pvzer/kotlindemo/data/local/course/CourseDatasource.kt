@@ -1,7 +1,7 @@
 package com.pvzer.kotlindemo.data.local.course
 
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.Topic
+import com.pvzer.kotlindemo.model.Topic
 
 object CourseDatasource {
     val topics = listOf(

@@ -31,6 +31,7 @@ import com.pvzer.kotlindemo.ui.woof.WoofDemo
 import com.pvzer.kotlindemo.data.local.DataSource
 import com.pvzer.kotlindemo.data.local.art_space.ArtSpaceDatasource
 import com.pvzer.kotlindemo.data.local.dessert.DessertDatasource
+import com.pvzer.kotlindemo.ui.cupcake.CupcakeApp
 import com.pvzer.kotlindemo.ui.dessert.DessertClickerApp
 import com.pvzer.kotlindemo.ui.theme.SuperheroesTheme
 
@@ -62,7 +63,8 @@ class MainActivity : ComponentActivity() {
 //                    SuperheroScreen()
 //                    WellnessScreen()
 //                    UnscrambleScreen()
-                    DessertScreen()
+//                    DessertScreen()
+                    CupcakeDemo()
                 }
             }
         }
@@ -191,4 +193,9 @@ fun UnscrambleScreen(){
 @Composable
 fun DessertScreen(){
     DessertClickerApp(desserts = DessertDatasource.dessertList)
+}
+
+@Composable
+fun CupcakeDemo(){
+    CupcakeApp()
 }

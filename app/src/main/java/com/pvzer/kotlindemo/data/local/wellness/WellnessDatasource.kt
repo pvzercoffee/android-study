@@ -1,7 +1,7 @@
 package com.pvzer.kotlindemo.data.local.wellness
 
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.Wellness
+import com.pvzer.kotlindemo.model.Wellness
 
 object WellnessDatasource{
     val WellnessList = listOf(

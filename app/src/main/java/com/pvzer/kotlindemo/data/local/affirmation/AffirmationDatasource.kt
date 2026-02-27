@@ -1,7 +1,7 @@
 package com.pvzer.kotlindemo.data.local.affirmation
 
 import com.pvzer.kotlindemo.R
-import com.pvzer.kotlindemo.data.model.Affirmation
+import com.pvzer.kotlindemo.model.Affirmation
 
 object AffirmationDatasource {
     val affirmationList = listOf<Affirmation>(

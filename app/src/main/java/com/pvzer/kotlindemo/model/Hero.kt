@@ -1,4 +1,4 @@
-package com.pvzer.kotlindemo.data.model
+package com.pvzer.kotlindemo.model
 
 import androidx.annotation.StringRes
 import androidx.annotation.DrawableRes
